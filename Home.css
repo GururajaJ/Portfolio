@@ -1,0 +1,524 @@
+body {
+    background-color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+section {
+    scroll-margin-top: 60px; /* Adjust for fixed navbar */
+  }
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 0 190px; /* Adjusted padding for better responsiveness */
+    gap: 30px; /* Added gap between elements */
+}
+.about-head :hover{
+    color: black;
+}
+.home-icons img:hover {
+    transform: scale(1.2); 
+    opacity: 0.8; 
+}
+.about-section {
+    padding: 40px 20px; /* Add padding for better spacing */
+    background-color: #00bcd4;
+  }
+  
+  .about-head {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional: Style heading */
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between text and image */
+    align-items: center;
+    gap: 20px; /* Add space between content and image */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+  }
+  
+  .about-content1 {
+    flex: 1;
+    font-size: 1.3em;
+    align-items: center;
+    color: black;
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  .about-content2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 70px; /* Optional: Add rounded corners */
+    border: 15px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+.home-icons img {
+    margin-right: 20px; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home-icons img:last-child {
+    margin-right: 0;
+}
+
+.text-colour {
+    color: #00bcd4;
+}
+
+.home-button {
+    margin-top: 8px;
+}
+
+.button {
+    background-color: #00bcd4;
+    color: black; 
+    border: none;
+    border-radius: 23px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #0197a4; /* Add hover effect for buttons */
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+    max-width: 500px; /* Limit content width for better layout */
+}
+
+.home-image img {
+    flex: 0;
+    width: 100%; /* Adjusts the size of the image to fit the container */
+    max-width: 300px; /* Ensures image doesn't grow too large */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 100px; 
+    margin-right: 130px;/* Reduced rounded corners */
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    font-size: 2.5em; /* Enhanced font size for better emphasis */
+    color: #fff;
+}
+
+.content h3 {
+    font-size: 1.2em;
+    color: #ccc; /* Slightly lighter color for better contrast */
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #bbb; /* Subtle text color for better readability */
+    line-height: 1.6; /* Improve text spacing */
+    margin-bottom: 15px;
+}
+/* projects */
+/* Container Styling */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Card Styling */
+.card1 {
+  width: 250px;
+  height: 350px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-front img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #00bcd4;
+}
+
+.card-front h3 {
+  font-size: 18px;
+  color: #00bcd4;
+  margin-top: 10px;
+}
+
+.short-description {
+  font-size: 14px;
+  color: white;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.full-description {
+  display: none;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card1-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card1-btn:hover {
+  background: #0288d1;
+}
+
+/* Expanding Effect on Hover */
+.card1:hover {
+  height: 450px;
+}
+
+.card1:hover .short-description {
+  display: none;
+}
+
+.card1:hover .full-description {
+  display: block;
+}
+
+/* Card Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Skills */
+.services-section{
+    background-color: #00bcd4;
+    padding: 12px;
+}
+.Skills-container1,
+.Skills-container2,
+.Skills-container3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Defines 4 equal columns */
+  gap: 20px; /* Adjust spacing between cards */
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 50px;
+}
+
+.Skills-card1,
+.Skills-card2,
+.Skills-card3,
+.Skills-card4,
+.Skills-card5,
+.Skills-card6,
+.Skills-card7 {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 230px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center-align content horizontally */
+  justify-content: space-between; /* Space between the image and text */
+  position: relative; /* To position the pseudo-element */
+  overflow: hidden; /* Hides the overflow of the pseudo-element */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Skills-card1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: orange; /* Card 1 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue; /* Card 2 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue; /* Card 3 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: orangered; /* Card 4 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral; /* Card 5 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card6::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow; /* Card 6 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card7::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: purple; /* Card 7 background color */
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.Skills-card1:hover::before,
+.Skills-card2:hover::before,
+.Skills-card3:hover::before,
+.Skills-card4:hover::before,
+.Skills-card5:hover::before,
+.Skills-card6:hover::before,
+.Skills-card7:hover::before {
+  transform: translateY(0);
+   /* The effect will fill the background from bottom to top */
+}
+
+.Skills-card1:hover,
+.Skills-card2:hover,
+.Skills-card3:hover,
+.Skills-card4:hover,
+.Skills-card5:hover,
+.Skills-card6:hover,
+.Skills-card7:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px black;
+  color: white;
+}
+
+.Skills-card1 img,
+.Skills-card2 img,
+.Skills-card3 img,
+.Skills-card4 img,
+.Skills-card5 img,
+.Skills-card6 img,
+.Skills-card7 img {
+  width: 80px; /* Adjust size based on your preference */
+  height: auto;
+  margin-top: 1rem; /* Optional spacing above the image */
+}
+
+.Skills-card1 h3,
+.Skills-card2 h3,
+.Skills-card3 h3,
+.Skills-card4 h3,
+.Skills-card5 h3,
+.Skills-card6 h3,
+.Skills-card7 h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem; /* Pushes text to the bottom */
+}
+
+.Skills-card1 h2,
+.Skills-card2 h2,
+.Skills-card3 h2,
+.Skills-card4 h2,
+.Skills-card5 h2,
+.Skills-card6 h2,
+.Skills-card7 h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -4.5rem; /* Pushes text to the bottom */
+}
+/* Contact */
+/* contact.css */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact-cont {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-det {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form form textarea {
+  resize: none;
+}
+
+.contact-form form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+  outline: none;
+}
+
+.contact-form form input,
+.contact-form form textarea:hover {
+  border-color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-cont {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-det {
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form form button {
+    width: 100%;
+    padding: 12px;
+  }
+}

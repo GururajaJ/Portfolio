@@ -1,0 +1,57 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white; /* Set default color */
+  padding-left: 20px; /* Align with links */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #00bcd4; /* Hover effect for the brand */
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+  padding-right: 10px;
+  display: flex;
+  gap: 10px; /* Add spacing between links */
+}
+
+.navbar-links li {
+  display: inline; /* Ensures links are horizontal */
+}
+
+.navbar-links li button {
+  background: none;
+  border: none;
+  color: white; /* Default text color */
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-links li button:hover {
+  color: #00bcd4; /* Hover effect for links */
+}
+
+.navbar-links li a:hover {
+  color: #00bcd4; /* Hover effect for anchor tags if used */
+}
